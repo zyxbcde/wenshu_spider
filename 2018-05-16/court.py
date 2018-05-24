@@ -297,8 +297,7 @@ def download(DocID):
 		'Origin':'http://wenshu.court.gov.cn',
 		'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
 	}
-	htmlStr = htmlStr.replace('court_title',courtInfo[0]).replace('court_date',courtInfo[1]).\
-		replace('read_count',courtInfo[2]).replace('court_content',courtInfo[3])
+	htmlStr = courtInfo[3]
 	htmlName = courtInfo[0]
 	data = {
 		'htmlStr':parse.quote(htmlStr),
